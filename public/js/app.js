@@ -21,8 +21,7 @@ weatherForm.addEventListener('submit', (e)=>{
 
         } else {
             messageOne.textContent = data.location
-            messageTwo.textContent = data.forecast.summary + ', temperature ' + data.forecast.temperature + ' degrees, feels like ' + data.forecast.feelslike + ' degrees'
-        
+            messageTwo.textContent = data.forecast.summary + ', temperature ' + data.forecast.temperature + ' degrees, feels like ' + data.forecast.feelslike + ' degrees with a wind speed of ' + data.forecast.windspeed
          }
     })
   })
